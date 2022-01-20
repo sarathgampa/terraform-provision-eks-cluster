@@ -38,10 +38,6 @@ jobs:
      # Terraform init
       - name: terraform init
         run: terraform init
-
-      # Terraform Validate
-      - name: terraform validate
-        run: terraform validate
  		
      # Terraform Apply
       - name: terraform apply
