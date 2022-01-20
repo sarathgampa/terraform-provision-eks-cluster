@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Terraform-Plan
+name: Terraform-Destroy
 
 # Controls when the workflow will run
 on:
@@ -34,7 +34,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1          
+          aws-region: ap-south-1
 
      # Terraform fmt
       - name: terraform fmt
@@ -44,13 +44,7 @@ jobs:
       - name: terraform init
         run: terraform init
 
+     # Terraform Destroy
+      - name: terraform Destroy
+        run: terraform destroy auto approve
 
-      # Terraform Validate
-      - name: terraform validate
-        run: terraform validate
-        
-     # Terraform Plan
-      - name: terraform plan
-        run: terraform plan
-          
-          
