@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions for Terraform Apply
+# This is a basic workflow to help you get started with Actions for Terraform
 
 name: Terraform-Apply
 
@@ -49,6 +49,6 @@ jobs:
         run: terraform validate
  		
      # Terraform Apply
-      - name: terraform Apply
+      - name: terraform apply
         run: terraform apply auto approve
 
