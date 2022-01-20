@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions for Terraform
-
 name: Terraform-Apply
 
 # Controls when the workflow will run
